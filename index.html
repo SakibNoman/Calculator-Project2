@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css"
+</head>
+<body>
+    <h1>Calculator</h1>
+    <!-- <div class="card">
+        <div class="calc-head">
+            <input type="text" id="result" maxlength="10" disabled >
+        </div>
+        <div class="calc-body">
+            <div>
+                <input type="button" class="btn" value="C" style="background-color: rgb(216, 27, 27);" >
+                <input type="button" class="btn" value="&radic;" >
+                <input type="button" class="btn" value="&pi;" >
+                <input type="button" class="btn btn-style" value="/" >
+            </div>
+            <div>
+                <input type="button" class="btn" value="7" >
+                <input type="button" class="btn" value="8" >
+                <input type="button" class="btn" value="9" >
+                <input type="button" class="btn btn-style" value="X" >
+            </div>
+            <div>
+                <input type="button" class="btn" value="4" >
+                <input type="button" class="btn" value="5" >
+                <input type="button" class="btn" value="6" >
+                <input type="button" class="btn btn-style" value="-" >
+            </div>
+            <div>
+                <input type="button" class="btn" value="1" >
+                <input type="button" class="btn" value="2" >
+                <input type="button" class="btn" value="3" >
+                <input type="button" class="btn btn-style" value="+" >
+            </div>
+            <div>
+                <input type="button" class="btn" value="0" >
+                <input type="button" class="btn" value="." >
+                <input type="button" class="btn" value="DEL" >
+                <input type="button" class="btn" value="=" style="background-color: rgb(113, 226, 211);" >
+            </div>
+
+        </div>
+    </div> -->
+    <form action="" name="calculator">
+        
+        <hr>
+        <input type="text" class="display-4" name="screen" style="border: 0px;"><br>
+        <hr>
+        <input type="text" class="display-5" name="screen2"style="border: 0px;" style="text-align: right;" placeholder="Result" >
+                <hr><br>
+                <input type="button" class="btn1" value="C1"  onclick="calculator.screen.value='' " >
+                <input type="button" class="btn1" value="C2" onclick="calculator.screen2.value=''">
+
+                <input type="button" class="btn1" value="&radic;" onclick="calculator.screen2.value=Math.sqrt(calculator.screen.value)" >
+                <input type="button" class="btn1" value="&pi;" onclick="calculator.screen.value+='3.1416'">
+                <input type="button" class="btn1" value="/" onclick="calculator.screen.value+='/'" >
+                <br>
+                <input type="button" class="btn" value="7" onclick="calculator.screen.value+='7'" >
+                <input type="button" class="btn" value="8" onclick="calculator.screen.value+='8'">
+                <input type="button" class="btn" value="9" onclick="calculator.screen.value+='9'">\
+                <input type="button" class="btn btn-style" value="X" onclick="calculator.screen.value+='*'">          <br>
+                <input type="button" class="btn" value="4" onclick="calculator.screen.value+='4'">
+                <input type="button" class="btn" value="5" onclick="calculator.screen.value+='5'">
+                <input type="button" class="btn" value="6" onclick="calculator.screen.value+='6'">
+                <input type="button" class="btn btn-style" value="-" onclick="calculator.screen.value+='-'" >
+            <br>
+                <input type="button" class="btn" value="1" onclick="calculator.screen.value+='1'">
+                <input type="button" class="btn" value="2" onclick="calculator.screen.value+='2'">
+                <input type="button" class="btn" value="3" onclick="calculator.screen.value+='3'">
+                <input type="button" class="btn btn-style" value="+" onclick="calculator.screen.value+='+'">
+            <br>
+                <input type="button" class="btn" value="0" onclick="calculator.screen.value+='0'">
+                <input type="button" class="btn" value="." onclick="calculator.screen.value+='.'">
+                <input type="button" class="btn" value="&larr;" onclick="calculator.screen.value=calculator.screen.value.slice(0,-1)">
+                <input type="button" class="btn" value="=" onclick="calculator.screen2.value=eval(calculator.screen.value)" >
+
+    
+    </form>
+    <div style="padding-top: 70px;">
+        <address>
+            Name: Sakib Noman
+            <br>
+            e-mail: skbnmn@gmail.com
+        </address>
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
